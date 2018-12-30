@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slot {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    padding: 10px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
+
+.slot.player1 .hole {
+
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid orange;
+    border-left: 50px solid orange;
+    border-bottom: 50px solid orange;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+
+.slot.player2 .hole {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid red;
+    border-left: 50px solid red;
+    border-bottom: 50px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+
+img {
+
+    width: 350px;
+    height: 350px;
+
+}
+
+h1 {
+    font-family: sans-serif, helvetica;
+    margin-left: 100px;
+    color: black;
+    font-size: 40px;
+
+}
+
+.message {
+    visibility: hidden;
+    position: absolute;
+    width: 390px;
+    height: 430px;
+    z-index: 10;
+    background-color: white;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+
+    .container {
+        margin-left: 40px;
+    }
+
+    .slot {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        padding: 3px;
+    }
+
+    .hole {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .slot.player1 .hole {
+
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-top: 20px solid orange;
+        border-left: 20px solid orange;
+        border-bottom: 20px solid orange;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+    }
+
+    .slot.player2 .hole {
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-top: 20px solid red;
+        border-left: 20px solid red;
+        border-bottom: 20px solid red;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+    }
+
+    img {
+
+        width: 170px;
+        height: 170px;
+
+    }
+
+    h1 {
+        font-family: sans-serif, helvetica;
+        margin-left: 50px;
+        color: black;
+        font-size: 20px;
+
+    }
+
+    .message {
+        visibility: hidden;
+        position: absolute;
+        width: 195px;
+        height: 215px;
+        z-index: 10;
+        background-color: white;
+
+    }
+
+}
