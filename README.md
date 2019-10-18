@@ -1,6 +1,6 @@
 # connect-4
 
-### Play my own game here: ![connect4](https://alecjara.github.io/)
+### Play my own game here: https://alecjara.github.io/
 
 #### Description:
 
